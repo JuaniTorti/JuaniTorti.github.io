@@ -219,7 +219,7 @@ main {
 }
 
 #agregar-informe:hover {
-    background-color: var(#e41212);
+    background-color: rgb(85, 85, 85);
 }
 
 .cuadros-detalle {
