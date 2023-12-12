@@ -302,8 +302,8 @@ function cambiarAgrupacionesPoliticas(datos) {
                     <div>${(datos.valoresTotalizadosPositivos[i].listas[j].votos * 100) / datos.estadoRecuento.cantidadVotantes}% <br>${datos.valoresTotalizadosPositivos[i].listas[j].votos} votos</div>
                 </div>
                 <div class="progress" style="background: ${colorClaro};">
-                    <div class="progress-bar" style="width:${datos.valoresTotalizadosPositivos[i].votosPorcentaje}%; background: ${color};">
-                        <span class="progress-bar-text">${datos.valoresTotalizadosPositivos[i].votosPorcentaje}%</span>
+                    <div class="progress-bar" style="width:${(datos.valoresTotalizadosPositivos[i].listas[j].votos * 100) / datos.estadoRecuento.cantidadVotantes}%; background: ${color};">
+                        <span class="progress-bar-text">${(datos.valoresTotalizadosPositivos[i].listas[j].votos * 100) / datos.estadoRecuento.cantidadVotantes}%</span>
                     </div>
                 </div>`
             }
