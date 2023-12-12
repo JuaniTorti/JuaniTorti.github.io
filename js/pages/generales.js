@@ -299,11 +299,11 @@ function cambiarAgrupacionesPoliticas(datos) {
                 htmlAgrupaciones +=
                     `<div class="div-agrupaciones">
                     <div><b>${datos.valoresTotalizadosPositivos[i].listas[j].nombre}</b></div>
-                    <div>${(datos.valoresTotalizadosPositivos[i].listas[j].votos * 100) / datos.estadoRecuento.cantidadVotantes}% <br>${datos.valoresTotalizadosPositivos[i].listas[j].votos} votos</div>
+                    <div>${((datos.valoresTotalizadosPositivos[i].listas[j].votos * 100) / datos.estadoRecuento.cantidadVotantes).toFixed(2)}% <br>${datos.valoresTotalizadosPositivos[i].listas[j].votos} votos</div>
                 </div>
                 <div class="progress" style="background: ${colorClaro};">
-                    <div class="progress-bar" style="width:${(datos.valoresTotalizadosPositivos[i].listas[j].votos * 100) / datos.estadoRecuento.cantidadVotantes}%; background: ${color};">
-                        <span class="progress-bar-text">${(datos.valoresTotalizadosPositivos[i].listas[j].votos * 100) / datos.estadoRecuento.cantidadVotantes}%</span>
+                    <div class="progress-bar" style="width:${((datos.valoresTotalizadosPositivos[i].listas[j].votos * 100) / datos.estadoRecuento.cantidadVotantes).toFixed(2)}%; background: ${color};">
+                        <span class="progress-bar-text">${((datos.valoresTotalizadosPositivos[i].listas[j].votos * 100) / datos.estadoRecuento.cantidadVotantes).toFixed(2)}%</span>
                     </div>
                 </div>`
             }
